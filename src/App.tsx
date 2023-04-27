@@ -14,7 +14,7 @@ function App() {
     {
       id: 1,
       username: "John Doe",
-      timestamp: "2023-04-27T10:30:00Z",
+      timestamp: "2000-04-27T10:30:00Z",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       url: "http://www.monohonramen.com/",
     },
