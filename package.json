@@ -1,0 +1,50 @@
+{
+  "name": "component-challenge",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "cd .. && husky install client/.husky",
+    "lint-staged": "npx lint-staged",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.4.0",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.127.0",
+    "mrm": "2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "tailwind-merge": "^1.10.0",
+    "tailwindcss-animate": "^1.0.5",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefix": "^1.0.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
