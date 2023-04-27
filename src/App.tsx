@@ -32,6 +32,12 @@ function App() {
       text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
       url: "https://www.phocafe.co.uk/",
     },
+    {
+      id: 4,
+      username: "test",
+      timestamp: "2023-04-26T14:30:00Z",
+      text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    },
   ]);
 
   function NewPostSection() {
