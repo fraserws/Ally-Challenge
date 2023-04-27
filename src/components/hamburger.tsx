@@ -12,7 +12,7 @@ import {
 
 function Hamburger() {
   return (
-    <div>
+    <div className="flex align-middle">
       <Menubar className="border-none">
         <Button variant="ghost">
           <BellIcon />
