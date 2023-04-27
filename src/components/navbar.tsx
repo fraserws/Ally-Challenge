@@ -1,5 +1,4 @@
-import { BellIcon } from "lucide-react";
-import { Button } from "./ui/button";
+import Hamburger from "./hamburger";
 import { Input } from "./ui/input";
 
 function Navbar() {
@@ -72,10 +71,8 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex lg:items-center lg:justify-end xl:col-span-4 gap-8">
-          <Button variant="ghost" className="flex items-center">
-            <BellIcon />
-          </Button>
+        <div className=" lg:flex pt-4 items-center lg:justify-end xl:col-span-4 gap-8 ">
+          <Hamburger />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 function ButtonGroup() {
   return (
-    <div className="flex flex-row sm:flex-col items-start">
+    <div className="flex flex-row sm:flex-col items-start justify-between">
       <Button variant="ghost" className="flex items-center">
         <HomeIcon className="sm:mr-2" />
         <span className="hidden sm:block">Home</span>
