@@ -107,9 +107,9 @@ function App() {
     );
   }
   return (
-    <div className="overflow-hidden scrollbar-none">
+    <div className="overflow-hidden scrollbar-none ">
       <Navbar />
-      <main className="mx-auto flex max-h max-w-[1500px]">
+      <main className="mx-auto pt-32 flex max-h max-w-[1500px]">
         <div className="fixed  h-full flex-col items-center p-2 sm:flex xl:w-[340px] xl:items-start hidden">
           <ButtonGroup />
         </div>
