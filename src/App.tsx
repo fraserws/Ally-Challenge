@@ -49,10 +49,10 @@ function App() {
       setisOpen(false);
     };
     return (
-      <>
+      <div className="overflow-hidden">
         <Sheet open={isopen}>
           <Button
-            className="flex items-center justify-center w-16 h-16 text-4xl text-white bg-yellow-500 rounded-full shadow-lg hover:bg-yellow-700 hover:shadow-xl fixed right-4 bottom-4 sm:bottom-8 sm:right-8 z-50"
+            className="flex items-center justify-center w-16 h-16 text-4xl text-white bg-yellow-500 rounded-full shadow-lg hover:bg-yellow-700 hover:shadow-xl fixed right-[42%] bottom-4 sm:bottom-8 sm:right-8 z-50"
             onClick={() => setisOpen(!isopen)}
           >
             <PlusIcon />
@@ -97,11 +97,11 @@ function App() {
             </div>
           </SheetContent>
         </Sheet>
-      </>
+      </div>
     );
   }
   return (
-    <div className="w-screen  bg-background">
+    <div className="overflow-hidden scrollbar-none">
       <Navbar />
       <main className="mx-auto flex max-h max-w-[1500px]">
         <div className="fixed  h-full flex-col items-center p-2 sm:flex xl:w-[340px] xl:items-start hidden">
@@ -116,10 +116,10 @@ function App() {
         </div>
         <div className="ml-8 hidden space-y-5 py-1 lg:inline xl:w-[450px]"></div>
       </main>
-      <div className="sm:hidden fixed bottom-0 left-0 w-screen mx-auto">
-        <ButtonGroup />
-      </div>
-      <div className="block  fixed bottom-2 sm:bottom-10 md:right-[10%] right-[45%] z-50 ">
+      <div className="flex-w-screen">
+        <div className="sm:hidden fixed bottom-0 left-0 w-screen mx-auto">
+          <ButtonGroup />
+        </div>
         <NewPostSection />
       </div>
     </div>
