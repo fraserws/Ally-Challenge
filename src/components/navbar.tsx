@@ -3,7 +3,7 @@ import { Input } from "./ui/input";
 
 function Navbar() {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sticky top-0 z-50 bg-white">
       <div className="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
         <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
           <div className="flex flex-shrink-0 items-center">
@@ -75,7 +75,7 @@ function Navbar() {
           <Hamburger />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

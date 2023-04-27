@@ -1,5 +1,6 @@
 import { BellIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Button } from "./ui/button";
 import {
   Menubar,
   MenubarContent,
@@ -13,7 +14,9 @@ function Hamburger() {
   return (
     <div>
       <Menubar className="border-none">
-        <BellIcon />
+        <Button variant="ghost">
+          <BellIcon />
+        </Button>
         <MenubarMenu>
           <MenubarTrigger>
             <Avatar>
